@@ -3,7 +3,7 @@ This program manages a bunch of virtual particles that gradually change color an
 
 # Further Explorations
 - [ ] Create an installer
-- [ ] Use swarms of particles to find approximate solutions to equations (AI)
-- [ ] Create fountains
-- [ ] Allow particles to bounce around the screen and orbit each other
-- [ ] Create mathematical simulations of how particles move
+- [ ] Use swarms of particles to find approximate solutions to equations **(AI)**
+- [ ] Create fountains **(GUI)**
+- [ ] Allow particles to bounce around the screen and orbit each other **(GUI)**
+- [ ] Create mathematical simulations of how particles move **(Math)**
