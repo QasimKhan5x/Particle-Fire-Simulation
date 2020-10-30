@@ -19,7 +19,7 @@ int main(int argc, char* args[]) {
 	
 	// Check if process failed
 	if (window == NULL) {
-		cout << "Could not create window: %s\n" << SDL_GetError() << endl;
+		cout << "Could not create window: " << SDL_GetError() << endl;
 		SDL_Quit();
 		return 2;
 	}
