@@ -6,6 +6,9 @@ This program manages a bunch of virtual particles that gradually change color an
 
 I use mingw32 to compile C/C++ programs. After downloading the SDL2 development library for mingw, you can follow [this guide](http://lazyfoo.net/SDL_tutorials/lesson01/windows/mingw/index.php) to ensure you can compile a C/C++ program that uses SDL2. 
 
+# Compile
+Use g++ -o main.exe main.cpp -lmingw32 -lSDL2main -lSDL2
+
 # Further Explorations
 - [ ] Create an installer
 - [ ] Use swarms of particles to find approximate solutions to equations **(AI)**
