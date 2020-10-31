@@ -10,7 +10,7 @@ I use mingw32 to compile C/C++ programs. After downloading the SDL2 development 
 `g++ -o main.exe main.cpp -lmingw32 -lSDL2main -lSDL2`
 
 # Snapshot
-![img](img.jpg)
+![img](img.JPG)
 # Further Explorations
 - [ ] Create an installer
 - [ ] Use swarms of particles to find approximate solutions to equations **(AI)**
