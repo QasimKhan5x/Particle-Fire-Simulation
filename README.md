@@ -12,7 +12,6 @@ I use mingw32 to compile C/C++ programs. After downloading the SDL2 development 
 # Snapshot
 ![img](img.JPG)
 # Further Explorations
-- [ ] Create an installer
 - [ ] Use swarms of particles to find approximate solutions to equations **(AI)**
 - [ ] Create fountains **(GUI)**
 - [ ] Allow particles to bounce around the screen and orbit each other **(GUI)**
