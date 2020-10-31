@@ -9,6 +9,8 @@ I use mingw32 to compile C/C++ programs. After downloading the SDL2 development 
 # Compile
 `g++ -o main.exe main.cpp -lmingw32 -lSDL2main -lSDL2`
 
+# Snapshot
+
 # Further Explorations
 - [ ] Create an installer
 - [ ] Use swarms of particles to find approximate solutions to equations **(AI)**
