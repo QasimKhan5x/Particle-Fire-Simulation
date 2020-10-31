@@ -28,8 +28,7 @@ int main(int argv, char** args) {
 		// number of ms since program started
 		int elapsed = SDL_GetTicks();
 		
-		screen.clear();
-		swarm.update();
+		swarm.update(elapsed);
 		
 		// color changing algorithm
 		unsigned char red = (1 + sin(elapsed * 0.0001)) * 128;
@@ -44,6 +43,8 @@ int main(int argv, char** args) {
 			
 			screen.setPixel(x, y, red, green, blue);
 		}
+		
+		screen.boxBlur();
 		
 		// Draw the screen
 		screen.update();
