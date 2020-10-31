@@ -18,7 +18,8 @@ int main(int argv, char** args) {
 	}
 	
 	Swarm swarm;
-	
+	const int hSCREENWIDTH = Screen::SCREEN_WIDTH / 2;
+	const int hSCREENHEIGHT = Screen::SCREEN_HEIGHT / 2;
 	// Update particles
 	do {
 		
@@ -38,8 +39,8 @@ int main(int argv, char** args) {
 		const Particle* const pParticles = swarm.getParticles();
 		for (int i = 0; i < Swarm::N_PARTICLES; i++) {
 			Particle particle = pParticles[i];
-			int x = (particle.m_x + 1) * Screen::SCREEN_WIDTH / 2;
-			int y = (particle.m_y + 1) * Screen::SCREEN_HEIGHT / 2;
+			int x = (particle.m_x + 1) * hSCREENWIDTH;
+			int y = particle.m_y * hSCREENWIDTH + hSCREENHEIGHT;
 			
 			screen.setPixel(x, y, red, green, blue);
 		}
