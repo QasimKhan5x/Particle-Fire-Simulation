@@ -18,6 +18,7 @@ public:
 	bool init();
 	void update();
 	void setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
+	void clear();
 	bool processEvents();
 	void close();
 };
@@ -104,6 +105,10 @@ bool Screen::processEvents() {
 		}
 	}
 	return true;
+}
+
+void Screen::clear() {
+	memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 }
 
 void Screen::close() {

@@ -19,12 +19,16 @@ int main(int argv, char** args) {
 	
 	Swarm swarm;
 	
+	// Update particles
 	do {
-		// Update particles
+		
 		
 		// Draw particles
 		// number of ms since program started
 		int elapsed = SDL_GetTicks();
+		
+		screen.clear();
+		swarm.update();
 		
 		// color changing algorithm
 		unsigned char red = (1 + sin(elapsed * 0.0001)) * 128;
